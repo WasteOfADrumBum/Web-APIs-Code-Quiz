@@ -42,7 +42,7 @@ var questions = [
     },
     {
         title: "Ch. 3: JavaScript - What is a function?",
-        choices: ["", "", "", "A set of statements that performs a task or calculates a value."],
+        choices: ["An individual's interactions with their environment and the ability to fulfill their role within such environments.", "A special relation which maps each element of set (A) with one and only one element of set (B).", "A student's ability to perform important functional activities that support or enable participation in the academic and related social aspects of an educational program.", "A set of statements that performs a task or calculates a value."],
         answer: "A set of statements that performs a task or calculates a value."
     },
     {
