@@ -303,7 +303,6 @@ function quizCompleted() {
     if (initials === null) {
       console.log("No value entered!");
     } else {
-      /* Æ | Need to make finalScore = timeRemaining * score */
       var finalScore = {
         initials: initials,
         score: calcScore,

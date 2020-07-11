@@ -19,6 +19,8 @@ var sortAlphaNum = function (a, b) {
 var allScores = localStorage.getItem("allScores");
 allScores = JSON.parse(allScores);
 allScores.sort(sortAlphaNum);
+
+console.log(allScores);
 console.log(sortAlphaNum);
 
 if (allScores !== null) {

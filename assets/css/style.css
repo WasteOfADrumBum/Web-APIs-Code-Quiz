@@ -120,7 +120,6 @@ button {
   font-size: 20px;
   color: white;
   /* Forces sumbit button below #label & #input */
-  /* Æ | Needs fix for break without using so much padding */
   margin: 45px;
 }
 
@@ -140,6 +139,7 @@ button {
 
 #btn-container {
   text-align: center;
+  padding-bottom: 15px;
 }
 
 /* --- || LINKS || --- */
@@ -227,6 +227,7 @@ p {
   height: 280px;
   overflow: hidden;
   overflow-y: auto;
+  letter-spacing: 10px;
 }
 
 /* --- || SCROLL BAR ATTRIBUTES || --- */
