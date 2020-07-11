@@ -47,17 +47,17 @@ var questions = [
     },
     {
         title: "Ch. 4: Web API’s - What is the DOM API?",
-        choices: ["", "", "The way a logical structure of documents are accessed and manipulated using an application programming interface for HTML and XML document", ""],
+        choices: ["The role takes partial or total control over the the other person in a power dynamic between participants.", "A DOM API's is a dirty old man's skin cream made from beeswax.", "The way a logical structure of documents are accessed and manipulated using an application programming interface for HTML and XML document", "The practice of defending computers, servers, mobile devices, electronic systems, networks, and data from malicious attacks."],
         answer: "The way a logical structure of documents are accessed and manipulated using an application programming interface for HTML and XML documents"
     },
     {
         title: "Ch. 4: Web API’s - What is event delegation?",
-        choices: ["A technique by which you add a single event handler to a parent element in order to avoid having to add event handlers to multiple child elements.", "", "", ""],
+        choices: ["A technique by which you add a single event handler to a parent element in order to avoid having to add event handlers to multiple child elements.", "A skill aquired when planing social gatherings.", "Empowering to act for another at planned public or social occasion", "It's not the end of the world, but I can see it from here."],
         answer: "A technique by which you add a single event handler to a parent element in order to avoid having to add event handlers to multiple child elements."
     },
     {
         title: "Ch. 4: Web API’s - What is not a purpose of client-side storage?",
-        choices: ["Personalizing site preferences", "Saving data and assets locally so a site will be quicker", "", "Saving web application generated documents locally for use offline"],
+        choices: ["Personalizing site preferences", "Saving data and assets locally so a site will be quicker", "Installs modifications to gain unfair advantages", "Saving web application generated documents locally for use offline"],
         answer: ""
     },
 ];
