@@ -160,6 +160,7 @@ function compare(event) {
     } else {
         render(questionIndex);
     }
+
     questionsDiv.appendChild(createDiv);
 
 }
@@ -229,6 +230,7 @@ function quizCompleted() {
             console.log("No value entered!");
 
         } else {
+            /* Æ | Need to make finalScore = timeRemaining * score */
             var finalScore = {
                 initials: initials,
                 score: timeRemaining
@@ -243,7 +245,7 @@ function quizCompleted() {
             allScores.push(finalScore);
             var newScore = JSON.stringify(allScores);
             localStorage.setItem("allScores", newScore);
-            // Travels to final page
+            // view highscores
             window.location.replace("./highscores.html");
         } 
     });

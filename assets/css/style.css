@@ -37,11 +37,13 @@ button {
 }
 
 #Submit {
-    background-color: grey;
-    margin-left: 33%;
+    background-color: grey; 
     padding: 15px 32px;
     font-size: 20px;
     color: white;
+    /* Forces sumbit button below #label & #input */
+    /* Æ | Needs fix for break without using so much padding */
+    margin: 45px;
 }
 
 #goHome {
@@ -85,6 +87,8 @@ a:hover {
 #questionsDiv {
     margin: 20px;
     font-size: 20px;
+    /* Centers #label and #input on complete page */
+    text-align: center;
 }
 
 #currentTime {
@@ -97,12 +101,14 @@ textarea {
 }
 
 label {
+    /* Space between text and input box */
     margin-right: 10px;
 }
 
 input {
+    /* Space between input box and sumbit button */
     margin-bottom: 20px;
-    width: 50%;
+    width: 15%;
     border: 1px solid lightgray;
 }
 
@@ -179,6 +185,7 @@ li {
     margin-top: 20px;
     border-top: 1px solid rgb(19, 18, 18);
     text-align: center;
+    padding-top: 10px;
 }
 
 #createP {
