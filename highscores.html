@@ -1,54 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <!-- || META || -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-<head>
-
-   <!-- || META || -->
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-   
-   <!-- || Style Sheets || -->
-   <!-- CSS -->
-   <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <!-- || Style Sheets || -->
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
 
     <!-- || Fonts || -->
-    <link href="https://fonts.googleapis.com/css2?family=Geostar+Fill&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Snippet&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Geostar+Fill&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Snippet&display=swap"
+      rel="stylesheet"
+    />
 
-   <!-- || PAGE TITLE || -->
-   <title>Web API - High Scores</title>
+    <!-- || PAGE TITLE || -->
+    <title>Web API - High Scores</title>
 
-   <!-- Code by: Joshua M. Small -->
+    <!-- Code by: Joshua M. Small -->
+  </head>
 
-</head>
-
-<body>
+  <body>
     <!-- || SCORES || -->
 
     <!-- 500px wrapper -->
     <div id="wrapper">
-        <div id="highscore-container">
-            <!-- Timer -->
-            <div id="currentTime"></div>
-            <!-- Scores -->
-            <div id="questionsDiv">
-                <h1>Highscores</h1>
-                <hr id="titleline">
-                <ul id="highScore"></ul>
-            </div>
+      <div id="highscore-container">
+        <!-- Timer -->
+        <div id="currentTime"></div>
+        <!-- Scores -->
+        <div id="questionsDiv">
+          <h1>Highscores</h1>
+          <hr id="titleline" />
+          <ul id="highScore"></ul>
         </div>
+      </div>
 
-        <!-- || BUTTONS || -->
+      <!-- || BUTTONS || -->
 
-        <div id="btn-container">
-            <button id="goHome">Go Home</button>
-            <button id="clear" value="reset">Clear Highscores</button>
-        </div>
-
+      <div id="btn-container">
+        <button id="goHome">Go Home</button>
+        <button id="clear" value="reset">Clear Highscores</button>
+      </div>
     </div>
     <script src="assets/js/highscores.js"></script>
-</body>
-
+  </body>
 </html>

@@ -1,63 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-
+  <head>
     <!-- || META || -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
     <!-- || Style Sheets || -->
     <!-- CSS -->
-    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
 
     <!-- || Fonts || -->
-    <link href="https://fonts.googleapis.com/css2?family=Geostar+Fill&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Snippet&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Geostar+Fill&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Snippet&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- || PAGE TITLE || -->
     <title>Web API - Code Quiz</title>
 
     <!-- Code by: Joshua M. Small -->
+  </head>
 
-</head>
-
-<body>
+  <body>
     <!-- || QUIZ || -->
 
     <!-- 500px wrapper -->
     <div id="wrapper">
-        <div>
-            <!-- Timer -->
-            <div id="currentTime"></div>
-            <!-- Quiz Content -->
-            <div id="questionsDiv">
-                <h1>Coding Quiz Challenge</h1>
-                <hr id="titleline">
-                <p>You have a 3 minute (180 seconds) time limit to answer twelve (12) code-related questions to prove
-                    you're employer ready. Each incorrect answer will result in your score as well as time being
-                    deducted. Good Luck! </p>
-                <ul id="choicesUl"></ul>
-            </div>
+      <div>
+        <!-- Timer -->
+        <div id="currentTime"></div>
+        <!-- Quiz Content -->
+        <div id="questionsDiv">
+          <h1>Coding Quiz Challenge</h1>
+          <hr id="titleline" />
+          <p>
+            You have a 3 minute (180 seconds) time limit to answer twelve (12)
+            code-related questions to prove you're employer ready. Each
+            incorrect answer will result in your score as well as time being
+            deducted. Good Luck!
+          </p>
+          <ul id="choicesUl"></ul>
         </div>
+      </div>
 
-        <!-- || BUTTONS || -->
+      <!-- || BUTTONS || -->
 
-        <div>
-            <button id="startTime">Start Quiz</button>
-        </div>
+      <div>
+        <button id="startTime">Start Quiz</button>
+      </div>
 
-        <div>
-            <!-- Link to return to highscores -->
-            <a href="highscores.html" alt="Current Highscores" id="viewhighs">HIGHSCORES</a>
-        </div>
-
+      <div>
+        <!-- Link to return to highscores -->
+        <a href="highscores.html" alt="Current Highscores" id="viewhighs"
+          >HIGHSCORES</a
+        >
+      </div>
     </div>
 
     <script src="assets/js/javascript.js"></script>
-
-</body>
-
+  </body>
 </html>
