@@ -83,11 +83,11 @@ var ulCreate = document.createElement("ul");
 timer.addEventListener("click", function () {
     /* Hide Start Button */
     var x = document.getElementById("startTime");
-        if (x.style.display === "none") {
-            x.style.display = "block";
-        } else {
-            x.style.display = "none";
-        }
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
     // Checking zero, originally set to zero
     if (holdInterval === 0) {
         holdInterval = setInterval(function () {
@@ -173,12 +173,12 @@ function quizCompleted() {
     var createH1 = document.createElement("h1");
     createH1.setAttribute("id", "createH1");
     createH1.textContent = "Complete!"
-    
+
     questionsDiv.appendChild(createH1);
 
     // <hr> element
-	var createTitleLine = document.createElement("hr");
-    createTitleLine.setAttribute("id", "titleline"); 
+    var createTitleLine = document.createElement("hr");
+    createTitleLine.setAttribute("id", "titleline");
 
     questionsDiv.appendChild(createTitleLine);
 
@@ -190,10 +190,14 @@ function quizCompleted() {
 
     // Calculates time remaining and replaces it with score
     if (secondsLeft >= 0) {
+        /* timeRemaining Calc */
         var timeRemaining = secondsLeft;
         var createP2 = document.createElement("p");
         clearInterval(holdInterval);
-        createP.textContent = "Your final score is: " + timeRemaining;
+        var calcScore = parseInt(timeRemaining) * parseInt(score)
+        console.log(typeof timeRemaining)
+        console.log(typeof score)
+        createP.textContent = "Your final score is: " + calcScore;
 
         questionsDiv.appendChild(createP2);
     }
@@ -224,7 +228,7 @@ function quizCompleted() {
     // Event listener for initials & local storage for initials and score
     createSubmit.addEventListener("click", function () {
         var initials = createInput.value;
-        
+
         /* Æ | Make initials only take max 4 letters & force only alpha-char */
 
         if (initials === null) {
@@ -235,9 +239,10 @@ function quizCompleted() {
             /* Æ | Need to make finalScore = timeRemaining * score */
             var finalScore = {
                 initials: initials,
-                score: timeRemaining
+                score: calcScore
             }
             console.log(finalScore);
+            /* Adds current finalScore to allScores */
             var allScores = localStorage.getItem("allScores");
             if (allScores === null) {
                 allScores = [];
@@ -249,7 +254,7 @@ function quizCompleted() {
             localStorage.setItem("allScores", newScore);
             // view highscores
             window.location.replace("./highscores.html");
-        } 
+        }
     });
 
 }

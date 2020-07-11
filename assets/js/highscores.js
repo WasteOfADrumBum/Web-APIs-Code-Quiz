@@ -9,9 +9,15 @@ clear.addEventListener("click", function () {
     location.reload();
 });
 
+/* © Alper G. & Joshua B. */
+/* var sortAlphaNum = function (a, b) {
+    return a.localeCompare(b, 'en', { numeric: true });
+}; */
+
 // Retreives local stroage and creates #highScore list
 var allScores = localStorage.getItem("allScores");
 allScores = JSON.parse(allScores);
+/* allScores.sort(sortAlphaNum); */
 
 if (allScores !== null) {
 
@@ -24,21 +30,6 @@ if (allScores !== null) {
 
     }
 }
-
-/* 
-Æ | Need to make #highScore into an array that can auto sort new scores by integers negating the letters by highest integer value reguardless of how many letters are in front of it
-
-const listScores = document.querySelectorAll('.highScore li');
-Array.from(listScores)
-
-var arr = ["", "", "", ""];
-var sortAlphaNum = function(a, b) { 
-    return a.localeCompare(b, 'en', { numeric: true });
-};
-arr.sort(sortAlphaNum);
-
-© Alper G.
-*/
 
 // Event listener to move to index.html home page to try again
 goHome.addEventListener("click", function () {

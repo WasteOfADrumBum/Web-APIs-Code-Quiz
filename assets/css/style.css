@@ -168,7 +168,9 @@ p {
     background: darkgrey; 
 }
 
-
+#highscore-container {
+    width: 100%;
+}
 
 li {
     background-color: grey;
@@ -179,6 +181,8 @@ li {
     font-size: 18px;
     color: white;
     border: solid 1px black;
+    /* Fixes Parent's Center Alignment */
+    text-align: left;
 }
 
 #createDiv {
