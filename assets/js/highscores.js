@@ -28,6 +28,9 @@ if (allScores !== null) {
 /* 
 Æ | Need to make into an array that can auto sort new scores by integers negating the letters by highest integer value reguardless of how many letters are in front of it
 
+const listScores = document.querySelectorAll('li');
+Array.from(listScores)
+
 var arr = ["", "", "", ""];
 var sortAlphaNum = function(a, b) { 
     return a.localeCompare(b, 'en', { numeric: true });
