@@ -224,6 +224,8 @@ function quizCompleted() {
     // Event listener for initials & local storage for initials and score
     createSubmit.addEventListener("click", function () {
         var initials = createInput.value;
+        
+        /* Æ | Make initials only take max 4 letters & force only alpha-char */
 
         if (initials === null) {
 
