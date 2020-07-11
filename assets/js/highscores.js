@@ -9,7 +9,7 @@ clear.addEventListener("click", function () {
     location.reload();
 });
 
-// Retreives local stroage 
+// Retreives local stroage and creates #highScore list
 var allScores = localStorage.getItem("allScores");
 allScores = JSON.parse(allScores);
 
@@ -26,9 +26,9 @@ if (allScores !== null) {
 }
 
 /* 
-Æ | Need to make into an array that can auto sort new scores by integers negating the letters by highest integer value reguardless of how many letters are in front of it
+Æ | Need to make #highScore into an array that can auto sort new scores by integers negating the letters by highest integer value reguardless of how many letters are in front of it
 
-const listScores = document.querySelectorAll('li');
+const listScores = document.querySelectorAll('.highScore li');
 Array.from(listScores)
 
 var arr = ["", "", "", ""];
@@ -40,9 +40,7 @@ arr.sort(sortAlphaNum);
 © Alper G.
 */
 
-
-
-// Event listener to move to index.html home page
+// Event listener to move to index.html home page to try again
 goHome.addEventListener("click", function () {
     window.location.replace("./index.html");
 });
