@@ -9,19 +9,28 @@ clear.addEventListener("click", function () {
   location.reload();
 });
 
-/* © Alper G. & Joshua B. */
-var sortAlphaNum = function (a, b) {
-  /* adding toString() makes list show back up, but it's not sorted */
-  return a.toString().localeCompare(b, "en", { numeric: true });
-};
+/* © Joshua B. */
+function compare(a, b) {
+  console.log("[A]:", a);
+  console.log("[B]:", b);
+  if (a.score > b.score) {
+    return -1;
+  }
+  if (a.score < b.score) {
+    return 1;
+  }
+  return 0;
+}
 
 // Retreives local stroage and creates #highScore list
 var allScores = localStorage.getItem("allScores");
+// Converts text to object
 allScores = JSON.parse(allScores);
-allScores.sort(sortAlphaNum);
+// Sort allScores using sortAlphaNum
+allScores.sort(compare);
 
+// Logs unsorted Highscores in consol
 console.log(allScores);
-console.log(sortAlphaNum);
 
 if (allScores !== null) {
   for (var i = 0; i < allScores.length; i++) {
