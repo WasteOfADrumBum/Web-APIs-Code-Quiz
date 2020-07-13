@@ -3,13 +3,18 @@ var highScore = document.querySelector("#highScore");
 var clear = document.querySelector("#clear");
 var goHome = document.querySelector("#goHome");
 
+// Event listener to move to index.html home page to try again
+goHome.addEventListener("click", function () {
+  window.location.replace("./index.html");
+});
+
 // Event listener - clears scores
 clear.addEventListener("click", function () {
   localStorage.clear();
   location.reload();
 });
 
-/* © Joshua B. */
+/* © Joshua B. - UNC T.A. */
 function compare(a, b) {
   console.log("[A]:", a);
   console.log("[B]:", b);
@@ -39,8 +44,3 @@ if (allScores !== null) {
     highScore.appendChild(createLi);
   }
 }
-
-// Event listener to move to index.html home page to try again
-goHome.addEventListener("click", function () {
-  window.location.replace("./index.html");
-});
