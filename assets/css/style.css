@@ -304,15 +304,9 @@ footer {
 }
 
 footer h1 {
-  text-align: center;
   font-size: 25px;
-  padding: 10px 10px 20px 10px;
-  color: white;
-  background-color: grey;
-  /* https://css-tricks.com/examples/TextStroke/ */
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
     3px 3px 0 #000;
-  font-family: Anime;
 }
 
 /* --- || FOOTER LINKS || --- */
@@ -357,10 +351,25 @@ footer a:hover {
   #wrapper {
     width: 350px;
     margin: 10px;
+    margin-bottom: 0px;
+  }
+
+  footer {
+    width: 370px;
+    margin: 10px;
+    margin-top: 0px;
+  }
+
+  .footer-container {
+    max-width: 330px;
+  }
+
+  footer h1 {
+    font-size: 20px;
   }
 
   a {
-    margin-left: 10%;
+    margin-left: 0%;
   }
 
   h1 {
