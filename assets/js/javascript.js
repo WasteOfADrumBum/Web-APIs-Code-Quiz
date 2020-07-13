@@ -283,15 +283,15 @@ function quizCompleted() {
   createInput.setAttribute("type", "text");
   createInput.setAttribute("id", "initials");
   createInput.setAttribute("maxlength", "4");
-  createInput.setAttribute("value", "Initials");
+  createInput.setAttribute("value", "ABC");
   createInput.setAttribute("onkeydown", "return alphaOnly(event);");
   createInput.setAttribute(
     "onblur",
-    "if (this.value == '') {this.value = 'Type Letters Only';}"
+    "if (this.value == '') {this.value = 'JMS';}"
   );
   createInput.setAttribute(
     "onfocus",
-    "if (this.value == 'Initials') {this.value = '';}"
+    "if (this.value == 'ABC') {this.value = '';}"
   );
 
   createInput.textContent = "";
