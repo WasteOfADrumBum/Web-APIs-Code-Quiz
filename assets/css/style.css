@@ -97,7 +97,7 @@ body {
   border: 1px solid grey;
   background-color: whitesmoke;
   padding: 10px;
-  margin: 50px;
+  margin: 50px, 50px, 0px, 50px;
 }
 
 /* --- || BUTTONS || --- */
@@ -280,6 +280,58 @@ li {
 #createLabel,
 #createInput {
   text-align: center;
+}
+
+/* -- || FOOTER || -- */
+
+.footer-container {
+  width: 500px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+footer {
+  padding: 10px 0;
+  font-size: 12px;
+  color: whitesmoke;
+  text-align: center;
+  background: grey;
+  border-top: 4px solid lightgrey;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+footer h1 {
+  text-align: center;
+  font-size: 25px;
+  padding: 10px 10px 20px 10px;
+  color: white;
+  background-color: grey;
+  /* https://css-tricks.com/examples/TextStroke/ */
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    3px 3px 0 #000;
+  font-family: Anime;
+}
+
+/* --- || FOOTER LINKS || --- */
+
+/* unvisited link */
+footer a:link {
+  color: white;
+  text-decoration: none;
+}
+
+/* visited link */
+footer a:visited {
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+/* mouse over link */
+footer a:hover {
+  color: black;
+  text-decoration: none;
 }
 
 /* || RESPONSIVE MEDIA QUERIES || */
