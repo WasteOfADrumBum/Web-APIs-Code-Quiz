@@ -286,7 +286,11 @@ function quizCompleted() {
   createInput.setAttribute("maxlength", "4");
   // Placeholder text
   createInput.setAttribute("value", "ABC");
-  createInput.setAttribute("onkeydown", "return alphaOnly(event);");
+  // © vishvendrasingh (GitHub)
+  createInput.setAttribute(
+    "onkeypress",
+    "return ((event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122) || (event.charCode == 32))"
+  );
   // Input my initials JMS is value is blank
   createInput.setAttribute(
     "onblur",
@@ -310,11 +314,7 @@ function quizCompleted() {
 
   questionsDiv.appendChild(createSubmit);
 
-  // ©hexacyanide (StackOverflow)
-  function alphaOnly(event) {
-    var key = event.keyCode;
-    return (key >= 65 && key <= 90) || key == 8;
-  }
+  console.log(event);
 
   // Event listener for initials & local storage for initials and score
   createSubmit.addEventListener("click", function () {
