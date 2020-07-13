@@ -291,7 +291,7 @@ function quizCompleted() {
   );
   createInput.setAttribute(
     "onfocus",
-    "if (this.value == 'Type Letters Only') {this.value = '';}"
+    "if (this.value == 'Initials') {this.value = '';}"
   );
 
   createInput.textContent = "";
