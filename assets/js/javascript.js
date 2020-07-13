@@ -282,6 +282,18 @@ function quizCompleted() {
   var createInput = document.createElement("input");
   createInput.setAttribute("type", "text");
   createInput.setAttribute("id", "initials");
+  createInput.setAttribute("maxlength", "4");
+  createInput.setAttribute("value", "Initials");
+  createInput.setAttribute("onkeydown", "return alphaOnly(event);");
+  createInput.setAttribute(
+    "onblur",
+    "if (this.value == '') {this.value = 'Type Letters Only';}"
+  );
+  createInput.setAttribute(
+    "onfocus",
+    "if (this.value == 'Type Letters Only') {this.value = '';}"
+  );
+
   createInput.textContent = "";
 
   questionsDiv.appendChild(createInput);
@@ -293,6 +305,12 @@ function quizCompleted() {
   createSubmit.textContent = "Submit";
 
   questionsDiv.appendChild(createSubmit);
+
+  // ©hexacyanide (StackOverflow)
+  function alphaOnly(event) {
+    var key = event.keyCode;
+    return (key >= 65 && key <= 90) || key == 8;
+  }
 
   // Event listener for initials & local storage for initials and score
   createSubmit.addEventListener("click", function () {
