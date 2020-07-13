@@ -9,6 +9,7 @@ var questions = [
       "Developes the back-end",
       "Handles workflows of server systems and clients",
     ],
+    // Answer: D
     answer: "Handles workflows of server systems and clients",
   },
   {
@@ -20,6 +21,7 @@ var questions = [
       "HTML creates the content and CSS is responsible for the design",
       "There is no relationship between HTML and CSS",
     ],
+    // Answer: C
     answer: "HTML creates the content and CSS is responsible for the design",
   },
   {
@@ -30,6 +32,7 @@ var questions = [
       "Decentralized workflow to be used solo wihout schedule releases",
       "It's when you go git that workflow!",
     ],
+    // Answer: A
     answer:
       "Centralized workflow used to edit code with team members and can be used to schedule releases.",
   },
@@ -41,6 +44,7 @@ var questions = [
       "Content Delivery Network",
       "Canadian Dairy Network",
     ],
+    // Answer: C
     answer: "Content Delivery Network",
   },
   {
@@ -51,6 +55,7 @@ var questions = [
       "An alphabetical list of names, subjects, etc., with references to the places where they occur",
       "A library allowing for easier, more standards-compliant web design",
     ],
+    // Answer: D
     answer:
       "A library allowing for easier, more standards-compliant web design",
   },
@@ -63,12 +68,14 @@ var questions = [
       "Relieves cross-browser concerns.",
       "Lays the groundwork and encourage grid-based design.",
     ],
+    // Answer: B
     answer: "Allows you to forgo HTML.",
   },
   {
     title:
       "Ch. 3: JavaScript - Which is not one of the fundamental concepts of programming?",
     choices: ["Variables", "Data Structures", "Syntax", "Neural Networks"],
+    // Answer: D
     answer: "Neural Networks",
   },
   {
@@ -80,6 +87,7 @@ var questions = [
       "A 2-dimensional system, applies rules both to a parent element and that element’s children.",
       "Machines capable of carrying out complex series of actions, they're technology is used to onnect people in the modern world",
     ],
+    // Answer: B
     answer:
       "Commonly used built-in constructs, they form the building blocks for modern JavaScript.",
   },
@@ -91,6 +99,7 @@ var questions = [
       "A student's ability to perform important functional activities that support or enable participation in the academic and related social aspects of an educational program.",
       "A set of statements that performs a task or calculates a value.",
     ],
+    // Answer: D
     answer: "A set of statements that performs a task or calculates a value.",
   },
   {
@@ -98,10 +107,11 @@ var questions = [
     choices: [
       "The role takes partial or total control over the the other person in a power dynamic between participants.",
       "A DOM API's is a dirty old man's skin cream made from beeswax.",
-      "The way a logical structure of documents are accessed and manipulated using an application programming interface for HTML and XML document",
+      "The way a logical structure of documents are accessed and manipulated using an application programming interface for HTML and XML documents",
       "The practice of defending computers, servers, mobile devices, electronic systems, networks, and data from malicious attacks.",
     ],
     answer:
+      // Answer: C
       "The way a logical structure of documents are accessed and manipulated using an application programming interface for HTML and XML documents",
   },
   {
@@ -112,6 +122,7 @@ var questions = [
       "Empowering to act for another at planned public or social occasion",
       "It's not the end of the world, but I can see it from here.",
     ],
+    // Answer: A
     answer:
       "A technique by which you add a single event handler to a parent element in order to avoid having to add event handlers to multiple child elements.",
   },
@@ -123,7 +134,8 @@ var questions = [
       "Installs modifications to gain unfair advantages",
       "Saving web application generated documents locally for use offline",
     ],
-    answer: "",
+    // Answer: C
+    answer: "Installs modifications to gain unfair advantages",
   },
 ];
 
@@ -315,8 +327,6 @@ function quizCompleted() {
   createSubmit.textContent = "Submit";
 
   questionsDiv.appendChild(createSubmit);
-
-  console.log(event);
 
   // Event listener for initials & local storage for initials and score
   createSubmit.addEventListener("click", function () {
