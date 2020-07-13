@@ -282,13 +282,17 @@ function quizCompleted() {
   var createInput = document.createElement("input");
   createInput.setAttribute("type", "text");
   createInput.setAttribute("id", "initials");
+  // Max character length of 4 for people who have 2 middle names
   createInput.setAttribute("maxlength", "4");
+  // Placeholder text
   createInput.setAttribute("value", "ABC");
   createInput.setAttribute("onkeydown", "return alphaOnly(event);");
+  // Input my initials JMS is value is blank
   createInput.setAttribute(
     "onblur",
     "if (this.value == '') {this.value = 'JMS';}"
   );
+  // Clear placeholder text onClick
   createInput.setAttribute(
     "onfocus",
     "if (this.value == 'ABC') {this.value = '';}"
