@@ -286,6 +286,8 @@ function quizCompleted() {
   createInput.setAttribute("maxlength", "4");
   // Placeholder text
   createInput.setAttribute("value", "ABC");
+  // Uppercase only conversion
+  createInput.setAttribute("style", "text-transform:uppercase");
   // © vishvendrasingh (GitHub)
   createInput.setAttribute(
     "onkeypress",
