@@ -40,7 +40,7 @@ https://wasteofadrumbum.github.io/Web-APIs-Code-Quiz/
 * The URL of the GitHub repository. Give the repository a unique name and include a README describing the project.
 https://github.com/WasteOfADrumBum/Web-APIs-Code-Quiz
 
-![code quiz](./assets/images/codequiz.gif)
+![code quiz](./assets/images/CodeQuiz.gif)
 
 - - -
 © 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
