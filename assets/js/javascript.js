@@ -1,142 +1,109 @@
 // Var with array and object for questions
-var questions = [
+var questions=[
+  {
+      title:
+      "What is HTML?",
+      choices: [
+         "A typical documents’ markup language for developing web pages to display on the web browser",
+         "Tags used to place the content and format the pages",
+         "A visual coding language",
+         "Stands for 'How To Measure Love'",
+      ],
+      //Answer:A
+      answer:"A typical documents’ markup language for developing web pages to display on the web browser",
+  },
+  
   {
     title:
-      "Ch. 1: HTML/CSS/GIT - What does it mean to be a full-stack web developer?",
+      "What does CSS do?",
     choices: [
-      "Handles server systems",
-      "Handles clients",
-      "Developes the back-end",
-      "Handles workflows of server systems and clients",
+      "Writes'The Lion, The Witch, and the Wardrobe' ",
+      "Describes the presentation of Web pages, including colors, layout, and fonts",
+      "Styles the Website",
+      "It doesn't do anything",
     ],
-    // Answer: D
-    answer: "Handles workflows of server systems and clients",
+    // Answer: B
+    answer: "Describes the presentation of Web pages, including colors, layout, and fonts",
   },
+  
   {
-    title:
-      "Ch. 1: HTML/CSS/GIT - What is the relationship between HTML and CSS?",
+    title: "What is GitHub?",
     choices: [
-      "HTML is responsible for the desgin and CSS creates the content",
-      "HTML needs CSS to be able to function",
-      "HTML creates the content and CSS is responsible for the design",
-      "There is no relationship between HTML and CSS",
-    ],
-    // Answer: C
-    answer: "HTML creates the content and CSS is responsible for the design",
-  },
-  {
-    title: "Ch. 1: HTML/CSS/GIT - What is Git workflow?",
-    choices: [
-      "Centralized workflow used to edit code with team members and can be used to schedule releases.",
+      "A centralized workflow used to edit code with team members and can be used to schedule releases.",
       "A workflow with a sequence of tasks that process a set of data",
-      "Decentralized workflow to be used solo wihout schedule releases",
-      "It's when you go git that workflow!",
-    ],
-    // Answer: A
-    answer:
-      "Centralized workflow used to edit code with team members and can be used to schedule releases.",
-  },
-  {
-    title: "Ch. 2: CSS/BootStrap - What is a CDN?",
-    choices: [
-      "Control Directory Number",
-      "Connect Direct Network",
-      "Content Delivery Network",
-      "Canadian Dairy Network",
+      "a Git repository hosting service",
+      "A phrase that stands for 'Git a Hubsand'",
     ],
     // Answer: C
-    answer: "Content Delivery Network",
-  },
-  {
-    title: "Ch. 2: CSS/BootStrap - What is a CSS framework?",
-    choices: [
-      "A standardized system for tagging text files to achieve various effects",
-      "An object-oriented computer programming language commonly used to create interactive effects",
-      "An alphabetical list of names, subjects, etc., with references to the places where they occur",
-      "A library allowing for easier, more standards-compliant web design",
-    ],
-    // Answer: D
     answer:
-      "A library allowing for easier, more standards-compliant web design",
+      "a Git repository hosting service",
   },
+
   {
-    title:
-      "Ch. 2: CSS/BootStrap - Which is not one of the benefits of using a CSS framework?",
+    title: "What does Bootstrap do?",
     choices: [
-      "Provides code that you just don’t need to write from scratch every time, like resets.",
-      "Allows you to forgo HTML.",
-      "Relieves cross-browser concerns.",
-      "Lays the groundwork and encourage grid-based design.",
+      "Provides multiple frameworks for front end web developers",
+      "A library that contains website and web app templates",
+      "It's the blueprint for the Content Delivery Network (CDN)",
+      "It's the mystical piece of clothing Americans must pull up to succeed in life",
     ],
-    // Answer: B
-    answer: "Allows you to forgo HTML.",
+    // Answer: A
+    answer: "Provides multiple frameworks for front end web developers",
   },
+
   {
-    title:
-      "Ch. 3: JavaScript - Which is not one of the fundamental concepts of programming?",
-    choices: ["Variables", "Data Structures", "Syntax", "Neural Networks"],
-    // Answer: D
-    answer: "Neural Networks",
-  },
-  {
-    title:
-      "Ch. 3: JavaScript - What are objects in JavaScript and why are they important?",
+    title: "How is CSS related to Bootstrap?",
     choices: [
-      "Collection of properties, that provides nutrients and energy to develop and grow",
-      "Commonly used built-in constructs, they form the building blocks for modern JavaScript.",
-      "A 2-dimensional system, applies rules both to a parent element and that element’s children.",
-      "Machines capable of carrying out complex series of actions, they're technology is used to onnect people in the modern world",
+      "They both utilize a standardized system used for tagging text files to achieve various effects",
+      "Both Bootstrap and CSS help to build presentable user interfaces",
+      "Both utlize an alphabetical list of names, subjects, etc., with references to the places where they occur",
+      "One is a library allowing for easier, more standards-compliant web design, the other makes a website more presentable",
     ],
     // Answer: B
     answer:
-      "Commonly used built-in constructs, they form the building blocks for modern JavaScript.",
+    "Both Bootstrap and CSS help to build presentable user interfaces",
   },
+
   {
-    title: "Ch. 3: JavaScript - What is a function?",
+    title:
+      "what's an example of an HTML element?",
     choices: [
-      "An individual's interactions with their environment and the ability to fulfill their role within such environments.",
-      "A special relation which maps each element of set (A) with one and only one element of set (B).",
-      "A student's ability to perform important functional activities that support or enable participation in the academic and related social aspects of an educational program.",
-      "A set of statements that performs a task or calculates a value.",
+      "#id",
+      ".class",
+      "<body>",
+      "var=",
     ],
+    // Answer: C
+    answer: "<body>",
+  },
+
+  {
+    title:
+      "What is not a tag utilized in Javascript?",
+    choices: [
+    "var=", 
+    "function()",
+    "}else if{",
+    "goHome="
+  ],
     // Answer: D
-    answer: "A set of statements that performs a task or calculates a value.",
+    answer: "goHome=",
   },
+
   {
-    title: "Ch. 4: Web API’s - What is the DOM API?",
+    title:
+      "Can Javascript be used to create video games?",
     choices: [
-      "The role takes partial or total control over the the other person in a power dynamic between participants.",
-      "A DOM API's is a dirty old man's skin cream made from beeswax.",
-      "The way a logical structure of documents are accessed and manipulated using an application programming interface for HTML and XML documents",
-      "The practice of defending computers, servers, mobile devices, electronic systems, networks, and data from malicious attacks.",
-    ],
-    answer:
-      // Answer: C
-      "The way a logical structure of documents are accessed and manipulated using an application programming interface for HTML and XML documents",
-  },
-  {
-    title: "Ch. 4: Web API’s - What is event delegation?",
-    choices: [
-      "A technique by which you add a single event handler to a parent element in order to avoid having to add event handlers to multiple child elements.",
-      "A skill aquired when planing social gatherings.",
-      "Empowering to act for another at planned public or social occasion",
-      "It's not the end of the world, but I can see it from here.",
+      "Absolutely, Yes!",
+      "Kinda, but there are limitations",
+      "Not really...",
+      "I don't know",
     ],
     // Answer: A
     answer:
-      "A technique by which you add a single event handler to a parent element in order to avoid having to add event handlers to multiple child elements.",
+      "Absolutely, Yes!",
   },
-  {
-    title: "Ch. 4: Web API’s - What is not a purpose of client-side storage?",
-    choices: [
-      "Personalizing site preferences",
-      "Saving data and assets locally so a site will be quicker",
-      "Installs modifications to gain unfair advantages",
-      "Saving web application generated documents locally for use offline",
-    ],
-    // Answer: C
-    answer: "Installs modifications to gain unfair advantages",
-  },
+
 ];
 
 // Declared variables
