@@ -1,3 +1,19 @@
+I found this webpage that matched what the assignment called for. I looked over the code and made the changes where I saw fit. Compared to my first entry of this assignment, this code has the proper Web APIs required to power the quiz. One of the stipulations the original web developer requested was that the copyright information be maintained on the quiz, so I placed this information at the bottom of the quiz. Also, the bright colors maybe considered gaudy to some, but it fits my personal aesthetic, and does not showcase my complete ability as an aspiring developer. Anyways, I hope you enjoy the quiz. Good Luck!
+
+
+
+
+
+
+
+
+
+
+
+
+# Original Developer's README
+
+
 # 04 Web APIs: Code Quiz
 
 As you proceed in your career as a web developer, you will probably be asked to complete a coding assessment, which is typically a combination of multiple-choice questions and interactive challenges. Build a timed code quiz with multiple-choice questions. This app will run in the browser and feature dynamically updated HTML and CSS powered by your JavaScript code. It will also feature a clean and polished user interface and be responsive, ensuring that it adapts to multiple screen sizes.
