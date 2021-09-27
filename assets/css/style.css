@@ -4,87 +4,7 @@ body {
   align-items: center;
   justify-content: center;
 
-  background-color: silver;
-  /* https://codingwiki.fandom.com/wiki/CSS_Patterns */
-  background-image: radial-gradient(
-      circle at 100% 150%,
-      silver 24%,
-      white 24%,
-      white 28%,
-      silver 28%,
-      silver 36%,
-      white 36%,
-      white 40%,
-      transparent 40%,
-      transparent
-    ),
-    radial-gradient(
-      circle at 0 150%,
-      silver 24%,
-      white 24%,
-      white 28%,
-      silver 28%,
-      silver 36%,
-      white 36%,
-      white 40%,
-      transparent 40%,
-      transparent
-    ),
-    radial-gradient(
-      circle at 50% 100%,
-      white 10%,
-      silver 10%,
-      silver 23%,
-      white 23%,
-      white 30%,
-      silver 30%,
-      silver 43%,
-      white 43%,
-      white 50%,
-      silver 50%,
-      silver 63%,
-      white 63%,
-      white 71%,
-      transparent 71%,
-      transparent
-    ),
-    radial-gradient(
-      circle at 100% 50%,
-      white 5%,
-      silver 5%,
-      silver 15%,
-      white 15%,
-      white 20%,
-      silver 20%,
-      silver 29%,
-      white 29%,
-      white 34%,
-      silver 34%,
-      silver 44%,
-      white 44%,
-      white 49%,
-      transparent 49%,
-      transparent
-    ),
-    radial-gradient(
-      circle at 0 50%,
-      white 5%,
-      silver 5%,
-      silver 15%,
-      white 15%,
-      white 20%,
-      silver 20%,
-      silver 29%,
-      white 29%,
-      white 34%,
-      silver 34%,
-      silver 44%,
-      white 44%,
-      white 49%,
-      transparent 49%,
-      transparent
-    );
-  background-size: 100px 50px;
+  background-color:palevioletred;
 }
 
 #wrapper {
@@ -94,8 +14,8 @@ body {
   justify-content: space-between;
   width: 500px;
   height: 500px;
-  border: 1px solid grey;
-  background-color: whitesmoke;
+  border: 1px solid tomato;
+  background-color: turquoise;
   padding: 10px;
   margin: 50px;
   margin-bottom: 0px;
@@ -109,33 +29,33 @@ button {
 
 #startTime {
   /* Position #startTime btn at bottom of #wrapper */
-  background-color: grey;
+  background-color: tomato;
   padding: 15px 32px;
   font-size: 20px;
-  color: white;
+  color: black;
 }
 
 #Submit {
-  background-color: grey;
+  background-color:tomato;
   padding: 15px 32px;
   font-size: 20px;
-  color: white;
+  color: black;
   /* Forces sumbit button below #label & #input */
   margin: 45px;
 }
 
 #goHome {
-  background-color: grey;
+  background-color: tomato;
   padding: 10px;
   font-size: 20px;
-  color: white;
+  color: black;
 }
 
 #clear {
-  background-color: grey;
+  background-color:tomato;
   padding: 10px;
   font-size: 20px;
-  color: white;
+  color: black;
 }
 
 #btn-container {
@@ -147,19 +67,19 @@ button {
 
 /* unvisited link */
 a:link {
-  color: grey;
+  color: red;
   text-decoration: none;
 }
 
 /* visited link */
 a:visited {
-  color: grey;
+  color: red;
   text-decoration: none;
 }
 
 /* mouse over link */
 a:hover {
-  color: black;
+  color: whitesmoke;
   text-decoration: none;
 }
 
@@ -188,15 +108,15 @@ input {
   /* Space between input box and sumbit button */
   margin-bottom: 20px;
   width: 15%;
-  border: 1px solid lightgray;
+  border: 1px solid tomato;
 }
 
 h1 {
   text-align: center;
   font-size: 75px;
   padding: 10px 10px 20px 10px;
-  color: white;
-  background-color: grey;
+  color: goldenrod;
+  background-color: turquoise;
   /* https://css-tricks.com/examples/TextStroke/ */
   text-shadow: -3px -3px 0 #000, 1px -3px 0 #000, -3px 3px 0 #000,
     3px 3px 0 #000;
@@ -215,7 +135,7 @@ p {
   max-width: 650px;
   height: 50px;
   margin-top: 0;
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid goldenrod;
   box-shadow: 0 20px 20px -20px #333;
   margin: -50px auto 10px;
   margin-bottom: 15px;
@@ -242,11 +162,11 @@ p {
 }
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: lightgrey;
+  background: turquoise;
 }
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: darkgrey;
+  background: tomato;
 }
 
 #highscore-container {
@@ -254,14 +174,14 @@ p {
 }
 
 li {
-  background-color: grey;
+  background-color: tomato;
   /* space between list items */
   margin-top: 10px;
   /* adds space from left edge & top/bottom for aesthetics */
   padding: 5px 15px;
   font-size: 18px;
-  color: white;
-  border: solid 1px black;
+  color: turquoise;
+  border: solid 1px goldenrod;
   /* Fixes Parent's Center Alignment */
   text-align: left;
 }
@@ -289,44 +209,6 @@ li {
   width: 500px;
   margin: 0 auto;
   padding: 10px;
-}
-
-footer {
-  padding: 10px 0;
-  font-size: 12px;
-  color: whitesmoke;
-  text-align: center;
-  background: grey;
-  border-top: 4px solid lightgrey;
-  border-left: 1px solid black;
-  border-right: 1px solid black;
-  border-bottom: 1px solid black;
-}
-
-footer h1 {
-  font-size: 25px;
-  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
-    3px 3px 0 #000;
-}
-
-/* --- || FOOTER LINKS || --- */
-
-/* unvisited link */
-footer a:link {
-  color: white;
-  text-decoration: none;
-}
-
-/* visited link */
-footer a:visited {
-  color: whitesmoke;
-  text-decoration: none;
-}
-
-/* mouse over link */
-footer a:hover {
-  color: black;
-  text-decoration: none;
 }
 
 /* || RESPONSIVE MEDIA QUERIES || */
